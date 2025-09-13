@@ -1,0 +1,192 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KWIZERA Joshua — Portfolio</title>
+  <meta name="description" content="Portfolio of KWIZERA Joshua - Software Engineering student" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:linear-gradient(180deg,#071022 0%, #0b1220 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:12px;overflow:hidden;flex:0 0 120px;border:2px solid rgba(255,255,255,0.06)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .intro{flex:1}
+    h1{margin:0;font-size:1.6rem;letter-spacing:0.4px}
+    .meta{color:var(--muted);margin-top:6px;font-size:0.95rem}
+    .links{margin-top:14px;display:flex;gap:10px}
+    .btn{background:var(--accent);color:#022;padding:8px 12px;border-radius:8px;font-weight:600;text-decoration:none}
+
+    nav{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+    nav a:hover{color:#fff;background:var(--glass)}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:26px}
+    section.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .about p{color:var(--muted);line-height:1.5}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;color:var(--muted);font-size:0.9rem}
+
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+    .project h4{margin:0 0 6px 0}
+    .project p{margin:0;color:var(--muted);font-size:0.95rem}
+
+    aside .card{position:sticky;top:24px}
+    .info-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+    .info-row:last-child{border-bottom:0}
+
+    .contact form{display:flex;flex-direction:column;gap:8px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:#eaf4ff}
+    input::placeholder,textarea::placeholder{color:var(--muted)}
+    .muted{color:var(--muted);font-size:0.9rem}
+
+    footer{color:var(--muted);text-align:center;margin-top:28px;padding:18px 0;font-size:0.9rem}
+
+    @media (max-width:900px){main{grid-template-columns:1fr}aside{order:2}header{flex-direction:row} .avatar{width:96px;height:96px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar"><img src="josh.jpg" alt="KWIZERA Joshua"></div>
+      <div class="intro">
+        <h1>KWIZERA Joshua — Software Engineering Student</h1>
+        <div class="meta">Kigali, Rwanda • +250 783 073 003 • <a href="mailto:gauchojoshua10@gmail.com" style="color:var(--accent);text-decoration:none">gauchojoshua10@gmail.com</a></div>
+        <div class="links">
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="#projects" style="background:transparent;color:var(--accent);border:1px solid rgba(255,255,255,0.03)">Projects</a>
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#references">References</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section id="about" class="card about">
+          <h3>About</h3>
+          <p>
+            Undergraduate Software Engineering student at Adventist University Of Central Africa (AUCA). Passionate about web development, databases and software design. Experienced with Java, PHP, JavaScript and MySQL. Fast learner and team player.
+          </p>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:14px">
+          <h3>Selected Projects</h3>
+          <div class="projects">
+            <div class="project">
+              <h4>Library Lending App</h4>
+              <p>A Java/RMI desktop app to manage book lending with admin and user roles. Local DB storage and basic auditing features.</p>
+            </div>
+            <div class="project">
+              <h4>Hospital Management System (Mini)</h4>
+              <p>Prototype built with Java, Swing and JDBC to manage patient records and appointments. Focus on validation and usability.</p>
+            </div>
+            <div class="project">
+              <h4>Personal Portfolio Site</h4>
+              <p>This website — a responsive single-file HTML/CSS/JS portfolio showcasing experience and contact information.</p>
+            </div>
+            <div class="project">
+              <h4>Web CRUD with PHP & MySQL</h4>
+              <p>Small web app demonstrating user signup, login and CRUD operations using PHP and MySQL with prepared statements.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="card" style="margin-top:14px">
+          <h3>Education</h3>
+          <div style="margin-top:8px">
+            <strong>Adventist University Of Central Africa (AUCA)</strong><div class="muted">Undergraduate — Software Engineering (03/2023 - 12/2026 expected)</div>
+            <div style="height:8px"></div>
+            <strong>Saint Kizito Technical High School</strong><div class="muted">A'Level — Software Development</div>
+            <div style="height:8px"></div>
+            <strong>College Mont Sion Apademu</strong><div class="muted">Computer Applications</div>
+          </div>
+        </section>
+
+        <section id="references" class="card" style="margin-top:14px">
+          <h3>References</h3>
+          <p class="muted">ITANGISHAKA Eliezer — Dean of Study, Musha Saint Kizito Technical High School<br>Phone: 0788550389</p>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card info">
+          <h3>Quick Info</h3>
+          <div class="info-row"><div>Location</div><div class="muted">Kigali, Rwanda</div></div>
+          <div class="info-row"><div>Availability</div><div class="muted">Open to internships & freelance</div></div>
+          <div class="info-row"><div>Languages</div><div class="muted">English (Intermediate), Kinyarwanda (Native)</div></div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Skills</h3>
+          <div class="skills" id="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Git</div>
+            <div class="skill">Database Mgmt</div>
+          </div>
+        </div>
+
+        <div class="card contact" style="margin-top:12px">
+          <h3>Contact</h3>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <textarea id="message" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send message</button>
+          </form>
+          <p class="muted" style="margin-top:8px">Or email directly: <a href="mailto:gauchojoshua10@gmail.com" style="color:var(--accent)">gauchojoshua10@gmail.com</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> KWIZERA Joshua — Built with ❤️ • Designed for clarity
+    </footer>
+  </div>
+
+  <script>
+    // small interactive bits
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // contact form simple validation and simulation
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name || !email || !message){
+        alert('Please fill all fields.');
+        return;
+      }
+      // simulate send
+      alert('Thanks ' + name + '! Your message has been noted. (This is a demo form)');
+      this.reset();
+    });
+
+    // smooth scroll for nav links
+    document.querySelectorAll('nav a, .links a').forEach(a=>{
+      a.addEventListener('click', function(e){
+        if(this.getAttribute('href').startsWith('#')){
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
